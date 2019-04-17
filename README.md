@@ -1,2 +1,10 @@
-# laser_scan_match_study
+﻿# laser_scan_match_study
 对ros下的laser_scan_match包源码按照个人理解添加注释
+
+LDP表示Laser data point 
+通过sm_icp()函数实现两个数据集的icp匹配
+
+当位移和角度变化超过一定阈值后会更新keyframe
+所谓keyframe即为icp匹配中的源点云
+
+会利用传感器数据设置icp迭代的初值
